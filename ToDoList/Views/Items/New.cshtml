@@ -1,0 +1,13 @@
+@{
+  Layout = "_Layout";
+}
+ 
+<h1>Add a new item to @Model.Name</h1>
+
+<form action="/categories/@Model.Id/items" method="post"> <!--where to send form data-->
+  <input id="categoryId" name="categoryId" type="hidden" value="@Model.Id"><!--even though a user is not filling anything out here, we want to pass along the categories id so that information is not lost-->
+  <label for="itemDescription">Item Description</label> 
+  <input id="itemDescription" name="itemDescription" type="text">
+  <button type='submit'>Add Item</button>
+</form>
+

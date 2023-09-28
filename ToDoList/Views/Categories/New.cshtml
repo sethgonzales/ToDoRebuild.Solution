@@ -1,0 +1,15 @@
+@{
+  Layout = "_Layout";
+}
+
+  <h1>Add a category</h1>
+  <p>Add a category here:</p>
+
+  <form action="/categories" method="post"> <!--use method post to signal that we look to post this info-->
+    <label for="categoryName">Category Name: </label>
+    <input id="categoryName" name="categoryName" type="text">
+    <button type="submit">Add new category</button>
+  </form>
+
+<p><a href="/">Back home</a></p> <!--create links back home or to cat list-->
+<p><a href="/categories">Back to categories.</a></p>

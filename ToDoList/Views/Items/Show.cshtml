@@ -1,0 +1,12 @@
+@{
+  Layout = "_Layout";
+}
+
+  <h1>To Do List Item Details: </h1>
+ 
+  <h2>@Model["item"].Description</h2> <!--item description-->
+  <h3>Category: @Model["category"].Name</h3><!--category name notation is again used bc item and cat were stored in the dictionary to be passed through the view-->
+
+  <a href='/categories/@Model["category"].Id/items/new'>Add another item</a>
+  <a href='/categories'>View all categories</a>
+
